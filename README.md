@@ -29,7 +29,7 @@ A few of the things this project do:
 * [Express](https://expressjs.com/pt-br/)
 * [Jest](https://jestjs.io/pt-BR/)
 
-## 🚀 Instalação
+## 🚀 Installation
 
 To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/download/) and [Docker](https://docs.docker.com/desktop/install/windows-install/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
