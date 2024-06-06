@@ -1,73 +1,67 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Simple Nest Rest API
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+[![en](https://img.shields.io/badge/README-English-red.svg)](https://github.com/nardini-22/simple-nest-rest-api/blob/master/README.md)
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## ✏️ Introduction
 
-## Description
+Using the NestJS course from [freeCodeCamp.org](https://www.youtube.com/@freecodecamp) as a basis, I created a simple REST API that can register and log in users, as well as provide a complete CRUD for users' favorite links (bookmarks). I use NestJS as the main framework, Docker + Postgres for quick and easy database creation, Drizzle as the ORM, Pactum + Jest for automated e2e testing, along with other utility libraries. This project is for study purposes; I did it with the intent of reinforcing the concept of REST API, working with databases for the first time (something I had never been interested in before), and delving a bit deeper into back-end development.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## 📋 Features
 
-## Installation
+A few of the things this project do:
 
-```bash
-$ pnpm install
-```
+* Signup and signin users;
+* Validates signup and signin;
+* Uses JWT to return user data;
+* Read, create, edit and remove bookmarks;
+* Error handling;
+* Tests e2e.
 
-## Running the app
+## 💻 Technologies
+* [NestJS](https://nestjs.com/)
+* [Drizzle](https://orm.drizzle.team/)
+* [Postgres](https://www.postgresql.org/)
+* [Zod](https://zod.dev/)
+* [Docker](https://www.docker.com/)
+* [Passport-jwt](https://www.passportjs.org/packages/passport-jwt/)
+* [PactumJS](https://pactumjs.github.io/)
+* [DotEnv](https://www.npmjs.com/package/dotenv)
+* [Express](https://expressjs.com/pt-br/)
+* [Jest](https://jestjs.io/pt-BR/)
 
-```bash
-# development
-$ pnpm run start
+## 🚀 Instalação
 
-# watch mode
-$ pnpm run start:dev
-
-# production mode
-$ pnpm run start:prod
-```
-
-## Test
+To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/download/) and [Docker](https://docs.docker.com/desktop/install/windows-install/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
 ```bash
-# unit tests
-$ pnpm run test
+# Clone this repository
+$ git clone https://github.com/nardini-22/simple-nest-rest-api.git
 
-# e2e tests
-$ pnpm run test:e2e
+# Go into the repository
+$ cd simple-nest-rest-api
 
-# test coverage
-$ pnpm run test:cov
+# Install dependencies
+$ npm install
+
+# Create Docker database
+$ npm run db:dev:restart
+
+# Run the app
+$ npm run start:dev
+
+# If necessary, open Drizzle GUI
+$ npx drizzle-kit studio
+
+# In case you want to run tests
+$ npm run test:e2e
 ```
 
-## Support
+> **Note**
+> If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
-## Stay in touch
+## ❤️ Enjoy this project? 
+Developed by Arthur Nardini.
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/arthur-nardini/)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nardini-22)
