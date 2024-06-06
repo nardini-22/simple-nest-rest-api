@@ -1,0 +1,27 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1712679136911,
+      "tag": "0000_common_punisher",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1715094000788,
+      "tag": "0001_previous_reaper",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1715095369343,
+      "tag": "0002_slippery_the_watchers",
+      "breakpoints": true
+    }
+  ]
+}
