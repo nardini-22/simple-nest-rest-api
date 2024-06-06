@@ -46,6 +46,8 @@ $ npm install
 # Create Docker database
 $ npm run db:dev:restart
 
+# Create a .env with same values as .env.example
+
 # Run the app
 $ npm run start:dev
 
