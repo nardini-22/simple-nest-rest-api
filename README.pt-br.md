@@ -17,7 +17,7 @@ Algumas coisas que esse projeto faz:
 * Tratamento de erros;
 * Apresenta testes automatizados e2e.
 
-## 💻 Criado com
+## 💻 Tecnologias
 
 * [NestJS](https://nestjs.com/)
 * [Drizzle](https://orm.drizzle.team/)
