@@ -1,6 +1,6 @@
 # Simple Nest Rest API
 
-[![en](https://img.shields.io/badge/README-English-red.svg)](https://github.com/nardini-22/simple-nest-rest-api/blob/master/README.md)
+[![pt](https://img.shields.io/badge/README-Portuguese-green.svg)](https://github.com/nardini-22/simple-nest-rest-api/blob/master/README.pt-br.md)
 
 ## ✏️ Introduction
 
