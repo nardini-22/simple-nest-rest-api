@@ -44,8 +44,10 @@ $ cd simple-nest-rest-api
 # Instale as dependências
 $ npm install
 
-# Cria a database no Docker
+# Crie a database no Docker
 $ npm run db:dev:restart
+
+# Crie um .env com os mesmos valores do .env.example
 
 # Rode a aplicação
 $ npm run start:dev
